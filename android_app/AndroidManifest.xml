@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.res_e_com"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResListActivity"
+            android:label="@string/title_activity_res_list" >
+        </activity>
+        <activity android:name=".MenuListActivity" >
+        </activity>
+        <activity
+            android:name=".AddCartActivity"
+            android:label="@string/title_activity_add_cart" >
+        </activity>
+        <activity
+            android:name=".ShowCartActivity"
+            android:label="@string/title_activity_show_cart" >
+        </activity>
+        <activity android:name=".UserSettingActivity" >
+        </activity>
+        <activity
+            android:name=".PlaceOrder"
+            android:label="@string/title_activity_place_order" >
+        </activity>
+        <activity
+            android:name=".TrackingActivity"
+            android:label="@string/title_activity_tracking" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,157 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     >
+
+    <TextView
+        android:id="@+id/deliver_or_pick_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/res_info_in_cart"
+        android:layout_below="@+id/add_product_in_checkout_btn"
+        android:layout_marginTop="25dp"
+        android:text="Deliver or Pick-Up" />
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deliver_or_pick_up"
+        android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/radio_deliver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/deliver_order" />
+    <RadioButton
+        android:id="@+id/radio_pick_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_up_order" />
+        </RadioGroup>
+
+<TextView
+    android:id="@+id/price_lebel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/radioGroup1"
+    android:layout_below="@+id/radioGroup1"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:text="Price" />
+
+<TextView
+    android:id="@+id/price_subtotal_lebel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/price_lebel"
+    android:layout_below="@+id/price_lebel"
+    android:gravity="left"
+    android:text="Subtotal" />
+
+    <TextView
+        android:id="@+id/price_subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/price_vat_lebel"
+        android:layout_alignRight="@+id/price_lebel"
+        android:gravity="right"
+        android:text="Subtotal.........." />
+
+<TextView
+        android:id="@+id/price_vat_lebel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/price_subtotal_lebel"
+        android:layout_below="@+id/price_subtotal_lebel"
+        android:text="VAT(15%)" />
+
+<TextView
+    android:id="@+id/price_vat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/price_delivery_fee"
+    android:layout_alignRight="@+id/price_lebel"
+    android:gravity="right"
+    android:text="vat......" />
+
+<TextView
+        android:id="@+id/price_delivery_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/price_vat_lebel"
+        android:layout_below="@+id/price_vat_lebel"
+        android:text="Delivery Fee" />
+<TextView
+    android:id="@+id/price_delivery_fee_tk"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/price_total_lebel"
+    android:layout_alignRight="@+id/price_lebel"
+    android:gravity="right"
+    android:text="Delivery Fee......" />
+<TextView
+        android:id="@+id/price_total_lebel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/price_delivery_fee"
+        android:layout_below="@+id/price_delivery_fee"
+        android:text="Total" />    
+        <TextView
+    android:id="@+id/price_total"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/price_delivery_fee"
+    android:layout_alignRight="@+id/price_lebel"
+    android:gravity="right"
+    android:text="Total......" />
+    <TextView
+        android:id="@+id/res_info_in_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Restaurant info: " />
+    <TextView
+        android:id="@+id/menu_info_in_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_below="@+id/res_info_in_cart"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Menu info:" />
+    <Button
+        android:id="@+id/add_product_in_checkout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_centerVertical="true"
+        android:text="Add Products" />
+
+    <Button
+        android:id="@+id/place_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price_total_lebel"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@+id/add_product_in_checkout_btn"
+        android:text="Place Order" />
+
+
+
+</RelativeLayout>
+</ScrollView>

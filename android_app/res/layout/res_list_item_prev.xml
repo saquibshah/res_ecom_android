@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/res_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:text="res_name" />
+
+
+
+    <TextView
+        android:id="@+id/delivery_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/res_name"
+        android:layout_below="@+id/res_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:text="del_charge" />
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/delivery_charge"
+        android:layout_below="@+id/delivery_charge"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="edittext3" />
+
+    <ImageView
+        android:id="@+id/res_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/delivery_charge"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/delivery_charge"
+        android:src="@drawable/abc_spinner_ab_focused_holo_dark" />
+
+</RelativeLayout>

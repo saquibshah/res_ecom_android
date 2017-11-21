@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_increase_cart"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_decrease_cart"
+        android:layout_alignBottom="@+id/btn_decrease_cart"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/menu_quantity_in_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_increase_cart"
+        android:layout_alignTop="@id/btn_decrease_cart"
+        android:layout_toLeftOf="@id/btn_increase_cart"
+        android:layout_toRightOf="@+id/btn_decrease_cart"
+        android:gravity="center"
+        android:text="Quantity 1" />
+
+    <TextView
+        android:id="@+id/txt_tot_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_increase_cart"
+        android:layout_below="@+id/btn_increase_cart"
+        android:layout_marginTop="36dp"
+        android:text="Tk.............." />
+
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_tot_price"
+        android:layout_alignBottom="@+id/txt_tot_price"
+        android:layout_alignParentLeft="true"
+        android:text="Total" />
+
+    <TextView
+        android:id="@+id/basic_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_basic_price"
+        android:layout_alignBottom="@+id/txt_basic_price"
+        android:layout_alignRight="@+id/btn_increase_cart"
+        android:text="Tk" />
+
+    <Button
+        android:id="@+id/btn_add_to_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_total"
+        android:layout_centerHorizontal="true"
+        android:text="Add to cart" />
+
+    <TextView
+        android:id="@+id/menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:text="Menu" />
+
+    <TextView
+        android:id="@+id/menu_ingredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/menu_name"
+        android:layout_marginTop="29dp"
+        android:text="Ingredient: " />
+
+    <TextView
+        android:id="@+id/txt_basic_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/menu_ingredient"
+        android:layout_below="@+id/menu_ingredient"
+        android:layout_marginTop="30dp"
+        android:text="Basic price" />
+
+    <Button
+        android:id="@+id/btn_decrease_cart"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_basic_price"
+        android:layout_below="@+id/txt_basic_price"
+        android:layout_marginTop="18dp"
+        android:text="-" />
+
+</RelativeLayout>
